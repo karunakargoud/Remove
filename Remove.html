@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<head>
+    <script>
+        function removePara(){
+            var pDomElement=document.querySelector("p");
+            pDomElement.remove();
+        }
+        function CreatePara()
+        {
+            var p=document.createElement("p");
+            p.innerText=`Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas autem odio earum maiores atque, 
+        veniam ipsum deleniti inventore doloremque quisquam error eos beatae libero hic dolorem totam,
+         harum provident quis expedita aut ratione facilis eligendi, sed aspernatur. Sit incidunt asperiores 
+         cumque laborum maiores sapiente. Tempore eius enim soluta, ab quod eos labore nihil repellat delectus
+          non rem quibusdam, voluptatum laboriosam neque officiis eum officia voluptas perferendis aspernatur 
+          commodi a debitis et autem asperiores. In quasi aut libero necessitatibus fuga? Laboriosam earum reiciendis
+           numquam unde ducimus. Sequi dolorum natus illo optio suscipit, nam a atque minima? Voluptatibus numquam 
+           veritatis est atque.`;
+           document.querySelector("h2").insertAdjacentElement("afterend",p);
+
+        }
+    </script>
+</head>
+<body>
+    <h2 >Remove Dom Element</h2>
+    <p >Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas autem odio earum maiores atque, 
+        veniam ipsum deleniti inventore doloremque quisquam error eos beatae libero hic dolorem totam,
+         harum provident quis expedita aut ratione facilis eligendi, sed aspernatur. Sit incidunt asperiores 
+         cumque laborum maiores sapiente. Tempore eius enim soluta, ab quod eos labore nihil repellat delectus
+          non rem quibusdam, voluptatum laboriosam neque officiis eum officia voluptas perferendis aspernatur 
+          commodi a debitis et autem asperiores. In quasi aut libero necessitatibus fuga? Laboriosam earum reiciendis
+           numquam unde ducimus. Sequi dolorum natus illo optio suscipit, nam a atque minima? Voluptatibus numquam 
+           veritatis est atque.</p>
+    <button onclick="CreatePara()">Add Dom Element</button>
+    <button onclick="removePara()" >Remove Para</button>
+</body>
+</html>
